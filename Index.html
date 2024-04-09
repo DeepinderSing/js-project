@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <img src="data:image/jpeg;base64,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" alt="Calculator Logo" class="header-logo">
+    <nav class="header-nav">
+      <ul>
+        <li><strong><a href="#about">About</a></strong></li>
+        <li><strong><a href="#how-to-use">How to Use</a></strong></li>
+        <li><strong><a href="#features">Features</a></strong></li>
+        <li><strong><a href="#download">Download</a></strong></li>
+        <li><strong><a href="#contact">Contact</a></strong></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+  <section>
+    <div class="image">
+      <img src="https://th.bing.com/th/id/OIP.SOZhQXMFnIJO-ltsmMjqmQHaE8?w=275&h=183&c=7&r=0&o=5&dpr=1.3&pid=1.7" width="100%">
+    </div>
+  </section>
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="content">
+        <div class="text">
+          <h2>About the Calculator</h2>
+          <p>Our calculator provides basic arithmetic functions such as addition, subtraction, multiplication, and division. It's designed to be user-friendly and efficient, making it a handy tool for everyday calculations.</p>
+        </div>
+        <div class="slideshow">
+          <img class="slide" src="https://www.bing.com/aclick?ld=e8AnMIwMPcdUGqBj3YBlGwgzVUCUzFzQ2T7yOevaXzHWDVafxUd97WDthtxawefofOF0Npklozk6ysSq1KMNd7btf1jBt-W1XcxHQSedV_CY2MSEosQ_GEF2oXGXKQMGyDPLjWBJmbn-7GQ_fQOro8ZmqEL9f7k4mUuJit-MfdtM3XlkTGk0fuDn5CDnW0l25rxF1C_Qir8p8lCgY0GbGxyG6Qsri2jEifvYJmZNfNw5ep0hPfAgHjk7OelagBFAQyGujywr8LMPrsCqiNe-lgZxXbbEAWfHuuHMOARj8ClYLTtfc3&u=aHR0cHMlM2ElMmYlMmZwaXhlbC5ldmVyZXN0dGVjaC5uZXQlMmY0MTY3JTJmY3ElM2Zldl9zaWQlM2QxMCUyNmV2X2NyeCUzZDczMjU1MjAzMzIyMzQwJTI2ZXZfbXQlM2RlJTI2ZXZfZHZjJTNkYyUyNmV2X3BseCUzZEMxMTEyMzEtUyUyNmV2X3B0aWQlM2Q0NTc2ODU0NTkxODUwNDA1JTI2ZXZfcGh5JTNkJTI2ZXZfbG9jJTNkJTI2ZXZfZXglM2QlMjZldl9lZmlkJTNkODhkZTAwMWQwZTVhMTNkZTIxYmQ2NjA5YjBiNzRiYmIlM2FHJTNhcyUyNnVybCUzZGh0dHBzJTI1M0ElMjUyRiUyNTJGd3d3LjRpbXByaW50LmNhJTI1MkZwcm9kdWN0JTI1MkZDMTExMjMxLVMlMjUzRmdmZWVkJTI1M0QxJTI1MjZta2lkJTI1M0QzcGxhQzExMTIzMS1TJTI1MjZ1dG1fc291cmNlJTI1M0RiaW5nJTI1MjZ1dG1fbWVkaXVtJTI1M0RjcGMlMjUyNnV0bV9jYW1wYWlnbiUyNTNEUExBJTI1MjZzY2lkJTI1M0RzY2JwbHBDMTExMjMxLVMlMjUyNnNjX2ludGlkJTI1M0RDMTExMjMxLVMlMjUyNmVmX2lkJTI1M0Q4OGRlMDAxZDBlNWExM2RlMjFiZDY2MDliMGI3NGJiYiUyNTNBRyUyNTNBcyUyNTI2c19rd2NpZCUyNTNEQUwhNDE2NyExMCE3MzI1NTIwMzMyMjM0MCE0NTc2ODU0NTkxODUwNDA1JTI2bXNjbGtpZCUzZDg4ZGUwMDFkMGU1YTEzZGUyMWJkNjYwOWIwYjc0YmJiJTI2dXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkQmluZyUyNTIwU0MlMjUyMFNob3BwaW5nJTI1MjAtJTI1MjBDYW5hZGElMjUyMC0lMjUyMEN1c3RvbSUyNnV0bV90ZXJtJTNkNDU3Njg1NDU5MTg1MDQwNSUyNnV0bV9jb250ZW50JTNkQmluZyUyNTIwU0MlMjUyMFNob3BwaW5nJTI1MjAtJTI1MjBDYW5hZGElMjUyMC0lMjUyMEN1c3RvbQ&rlid=88de001d0e5a13de21bd6609b0b74bbb" alt="Calculator Image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how-to-use" class="section how-to-use">
+    <div class="box">
+      <h2>How to Use</h2>
+      <p>To perform calculations:</p>
+      <ul>
+        <li>Enter numbers using the keypad</li>
+        <li>Use the buttons for addition (+), subtraction (-), multiplication (*), and division (/)</li>
+        <li>Press the "=" button to see the result</li>
+        <li>Use the "C" button to clear the input</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="features" class="section features">
+    <div class="container">
+      <h2>Features</h2>
+      <ul>
+        <li>Simple and intuitive interface</li>
+        <li>Supports basic arithmetic operations</li>
+        <li>Responsive design - works on any device</li>
+        <li>Easy to use for both beginners and advanced users</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="download" class="section download">
+    <div class="container">
+      <h2>Download the Calculator App</h2>
+      <p>Get the calculator app now and simplify your calculations!</p>
+      <a href="calculator.html" class="download-btn">Use Now</a>
+    </div>
+  </section>
+  
+
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>If you have any questions or feedback, feel free to reach out to us.</p>
+      <form class="contact-form" action="support.html" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit" class="send-message-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+  
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Calculator. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../Deepinder Project/javascript/script.js" defer></script>
+
+<!-- 
+  <script>
+        // scripts-2.js
+        document.addEventListener("DOMContentLoaded", function() {
+  const productNames = document.querySelectorAll(".product h2");
+  productNames.forEach(function(productName) {
+    productName.addEventListener("click", function() {
+      this.classList.toggle("show-full-name");
+    });
+  });
+
+  document.querySelector(".contact-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the default form submission behavior
+
+    // Check if form fields are filled
+    var name = document.querySelector(".contact-form input[type='text']").value;
+    var email = document.querySelector(".contact-form input[type='email']").value;
+    var message = document.querySelector(".contact-form textarea").value;
+
+    if (name && email && message) {
+      // Redirect to success page
+      window.location.href = "support.html";
+    } else {
+      // Display an error message or perform any other action
+      alert("Please fill in all fields.");
+    }
+  });
+});
+
+  // JavaScript for the slideshow
+  let slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("slide");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+  </script> -->
+</body>
+</html>
